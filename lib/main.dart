@@ -13,36 +13,67 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisSize: MainAxisSize.min,
-            verticalDirection: VerticalDirection.up,
-            children: [
-              Container(
-                color: Colors.white,
-                height: 100,
-                width: 100,
-                child: Text("Container 1"),
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 50,
+              backgroundImage: AssetImage("assets/images/profile_picture.png"),
+            ),
+            Text(
+              "Basak K.",
+              style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Pacifico"),
+            ),
+            Text(
+              "FLUTTER DEVELOPER",
+              style: TextStyle(
+                  fontSize: 20,
+                  letterSpacing: 2.5,
+                  color: Colors.teal.shade50,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Source Sans Pro"),
+            ),
+            SizedBox(
+              height: 20,
+              width: 150,
+              child: Divider(
+                color: Colors.teal.shade100,
               ),
-              SizedBox(height: 10),
-              Container(
-                color: Colors.blue,
-                height: 100,
-                width: 100,
-                child: Text("Container 2"),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              child: ListTile(
+                leading: Icon(Icons.phone, color: Colors.teal),
+                title: Text(
+                  "+90 123 456 7891",
+                  style: TextStyle(
+                    color: Colors.teal.shade900,
+                    fontFamily: "Source Sans Pro",
+                    fontSize: 20,
+                  ),
+                ),
               ),
-              Container(
-                color: Colors.red,
-                height: 100,
-                width: 100,
-                child: Text("Container 3"),
-              )
-            ],
-          ),
-        ),
+            ),
+            Card(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(Icons.email, color: Colors.teal),
+                  title: Text(
+                    "dev.basakk6@gmail.com",
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: "Source Sans Pro",
+                      fontSize: 20,
+                    ),
+                  ),
+                ))
+          ],
+        )),
       ),
     );
   }
 }
-
-
