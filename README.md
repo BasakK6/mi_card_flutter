@@ -6,7 +6,7 @@
 
 Now that we've seen how to create a Flutter app entirely from scratch, we're going to go further and learn more about how to design user interfaces for Flutter apps.
 
-## What you will create
+## What we will create
 
 Mi Card is a personal business card. Imagine every time someone wants our contact details or our business card but you we didn't have it on us. Well, now we can get them to download our business card as an app.
 
